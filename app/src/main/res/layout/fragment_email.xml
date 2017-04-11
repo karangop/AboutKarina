@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.karangop.aboutkarina.EmailFragment"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/contactBtn"
+        android:text="CONTÁCTAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/ic_email_white_24dp"
+        android:textColor="@android:color/white"
+        android:theme="@style/AccentButton"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/msgWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Su mensaje"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/msgEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:text="ENVIAR "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/ic_send_white_24dp"
+        android:textColor="@android:color/white"
+        android:theme="@style/AccentButton"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
